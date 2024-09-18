@@ -1,0 +1,27 @@
+syntax = "proto3"
+
+package distributedml;
+
+service MasterService {
+  rpc AssignTask(TaskRequest) returns (TaskResponse);
+  rpc ReceiveResult(ResultRequest) returns (ResultResponse);
+}
+
+message TaskRequest {
+  string algorithm = 1;
+  repeated double data = 2;
+  map<string, string> params = 3;
+}
+
+message TaskResponse {
+  string message = 1;
+}
+
+message ResultRequest {
+  string worker_id = 1;
+  repeated double result = 2;
+}
+
+message ResultResponse {
+  string message = 1;
+}
