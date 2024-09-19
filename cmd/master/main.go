@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/yourusername/distributed-ml/pkg/communication"
+	pb "github.com/Luc4as5ant0s/golearn/pkg/communication"
 	"google.golang.org/grpc"
 )
 

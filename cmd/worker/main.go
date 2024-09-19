@@ -8,8 +8,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	algopb "github.com/yourusername/distributed-ml/pkg/algorithms"
-	pb "github.com/yourusername/distributed-ml/pkg/communication"
+	algopb "github.com/Luc4as5ant0s/golearn/pkg/algorithms"
+	pb "github.com/Luc4as5ant0s/golearn/pkg/communication"
 )
 
 func main() {
